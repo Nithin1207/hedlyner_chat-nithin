@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 224 71.4% 4.1%;
+		--card: 0 0% 100%;
+		--card-foreground: 224 71.4% 4.1%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 224 71.4% 4.1%;
+
+		/* Lemon Green Color */
+		--primary: 75 100% 50%;
+		/* Lemon Green */
+		--primary-foreground: 210 20% 98%;
+		/* White for text */
+
+		--secondary: 75 100% 60%;
+		/* Lighter lemon green */
+		--secondary-foreground: 224 71.4% 4.1%;
+		/* Dark text for secondary */
+
+		--muted: 75 100% 90%;
+		/* Very light lemon green */
+		--muted-foreground: 220 8.9% 46.1%;
+		/* Default muted foreground text */
+
+		--accent: 75 100% 70%;
+		/* A softer green */
+		--accent-foreground: 224 71.4% 4.1%;
+		/* Dark text for accent */
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 20% 98%;
+		--border: 220 13% 91%;
+		--input: 220 13% 91%;
+		--ring: 75 100% 50%;
+		/* Lemon green ring */
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 224 71.4% 4.1%;
+		--foreground: 210 20% 98%;
+		--card: 224 71.4% 4.1%;
+		--card-foreground: 210 20% 98%;
+		--popover: 224 71.4% 4.1%;
+		--popover-foreground: 210 20% 98%;
+
+		/* Dark mode Lemon Green */
+		--primary: 75 100% 45%;
+		/* Darker Lemon Green */
+		--primary-foreground: 210 20% 98%;
+
+		--secondary: 75 100% 50%;
+		/* Medium Lemon Green */
+		--secondary-foreground: 210 20% 98%;
+
+		--muted: 75 100% 80%;
+		/* Light lemon green */
+		--muted-foreground: 217.9 10.6% 64.9%;
+
+		--accent: 75 100% 60%;
+		/* Softer Lemon Green */
+		--accent-foreground: 210 20% 98%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 20% 98%;
+		--border: 215 27.9% 16.9%;
+		--input: 215 27.9% 16.9%;
+		--ring: 75 100% 45%;
+		/* Lemon green ring for dark mode */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+}
